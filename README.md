@@ -1,6 +1,6 @@
 # 🚦 ML-Based Adaptive Network Congestion Controller
 
-> **A systems + machine learning project that simulates network congestion, predicts it using ML, and dynamically controls traffic to reduce packet loss using a closed-loop feedback mechanism.**
+> A systems + machine learning project that simulates network congestion, predicts it using ML, and dynamically controls traffic to reduce packet loss using a closed-loop feedback mechanism.
 
 ---
 
@@ -14,10 +14,10 @@ This project demonstrates how **machine learning can proactively control network
 ## 🚀 What This System Does
 
 - Simulates real network congestion (queues, bandwidth, packet drops)
-- Generates its **own dataset** from system behavior
+- Generates its own dataset from system behavior
 - Trains an ML model to predict congestion
-- Uses ML predictions to **actively control traffic**
-- Achieves **>99% reduction in packet loss**
+- Uses ML predictions to actively control traffic
+- Achieves **more than 99% reduction in packet loss**
 
 ---
 
@@ -25,7 +25,7 @@ This project demonstrates how **machine learning can proactively control network
 
 - 📡 Network congestion simulation  
 - 📊 Automatic dataset generation  
-- 🤖 ML-based congestion prediction (**Logistic Regression**)  
+- 🤖 ML-based congestion prediction (Logistic Regression)  
 - 🔁 Closed-loop adaptive controller  
 - 📉 Static vs Adaptive system comparison  
 - ⚡ Lightweight, CPU-safe, reproducible  
@@ -34,7 +34,7 @@ This project demonstrates how **machine learning can proactively control network
 
 ## 🧠 System Architecture
 
-### 🔹 High-Level Flow
+### High-Level Flow
 
 ```mermaid
 flowchart LR
@@ -46,8 +46,6 @@ flowchart LR
     Decision -->|No| Normal[Allow Normal Traffic]
     Reduce --> Traffic
     Normal --> Traffic
-
-
 🏗️ Project Structure
 ml-network-congestion/
 │
@@ -71,7 +69,7 @@ ml-network-congestion/
 1️⃣ Network Simulation
 Models packet arrival, router queues, and bandwidth limits
 
-Simulates congestion and packet drops under heavy load
+Simulates congestion and packet drops under heavy traffic
 
 2️⃣ Dataset Generation
 Extracted features from live simulation:
@@ -121,7 +119,7 @@ This forms a closed-loop feedback control system.
 Total packets dropped: 1188
 ✅ ML-Adaptive System
 Total packets dropped: 10
-📉 Packet loss reduced by over 99%
+📉 Packet loss reduced by more than 99%
 
 ▶️ How to Run
 1️⃣ Activate virtual environment
@@ -135,11 +133,11 @@ python controller/adaptive_controller.py
 🧠 Why This Project Is Strong
 This project goes beyond ML prediction and demonstrates ML-driven system control.
 
-You showcase:
+It showcases:
 
 Core computer networks concepts
 
-Machine learning in real systems
+Machine learning applied to real systems
 
 Feedback control loops
 
@@ -156,7 +154,7 @@ Software-Defined Networking (SDN) integration
 
 Real-time visualization dashboard
 
-Cloud traffic management use-cases
+Cloud traffic management use cases
 
 👩‍💻 Author
 Bhumika Kumari
@@ -167,6 +165,5 @@ Focus: Machine Learning + Core CSE + Systems
 GitHub: https://github.com/Bhumika-0204
 
 ⭐ Final Note
-This project is designed to reflect real-world ML + networking engineering, not just academic theory.
+This project reflects real-world ML + networking engineering, not just academic theory.
 If you found it useful, feel free to ⭐ star the repository.
-
