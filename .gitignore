@@ -1,6 +1,11 @@
-# Python cache
+# Python
 __pycache__/
 *.pyc
-
-# Virtual environment
 .venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data / models
+*.pkl
