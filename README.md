@@ -45,8 +45,7 @@ flowchart LR
     Decision -->|Yes| Reduce[Reduce Traffic Rate]
     Decision -->|No| Normal[Allow Normal Traffic]
     Reduce --> Traffic
-    Normal --> Traffic```
-
+    Normal --> Traffic
 🏗️ Project Structure
 ml-network-congestion/
 │
@@ -68,13 +67,11 @@ ml-network-congestion/
 └── .gitignore
 ⚙️ Module Breakdown
 Network Simulation
-
 Models packet arrival, router queues, and bandwidth limits
 
 Simulates congestion and packet drops under heavy traffic
 
 Dataset Generation
-
 Extracted features:
 
 Incoming packet rate
@@ -92,7 +89,6 @@ Labels:
 1 → Congestion
 
 Machine Learning Model
-
 Model: Logistic Regression
 
 Fast, interpretable, low latency
@@ -108,22 +104,15 @@ flowchart TD
     Predict -->|Clear| Allow[Allow Normal Traffic]
     Throttle --> Continue[Continue Simulation]
     Allow --> Continue
-
-
 This forms a closed-loop feedback control system.
 
 🧪 Experimental Results
-
-Static System:
+Static System
 
 Total packets dropped: 1188
-
-
-ML-Adaptive System:
+ML-Adaptive System
 
 Total packets dropped: 10
-
-
 Packet loss reduced by more than 99%.
 
 ▶️ How to Run
@@ -131,9 +120,7 @@ Packet loss reduced by more than 99%.
 python simulator/data_collector.py
 python ml/train_model.py
 python controller/adaptive_controller.py
-
 👩‍💻 Author
-
 Bhumika Kumari
 B.Tech Computer Science & Engineering
 
