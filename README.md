@@ -45,7 +45,7 @@ flowchart LR
     Decision -->|Yes| Reduce[Reduce Traffic Rate]
     Decision -->|No| Normal[Allow Normal Traffic]
     Reduce --> Traffic
-    Normal --> Traffic
+    Normal --> Traffic```
 
 🏗️ Project Structure
 ml-network-congestion/
